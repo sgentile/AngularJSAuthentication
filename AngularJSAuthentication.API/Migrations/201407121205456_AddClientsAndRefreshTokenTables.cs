@@ -6,7 +6,8 @@ namespace AngularJSAuthentication.API.Migrations
     public partial class AddClientsAndRefreshTokenTables : DbMigration
     {
         public override void Up()
-        {
+        {            
+            
             CreateTable(
                 "dbo.Clients",
                 c => new

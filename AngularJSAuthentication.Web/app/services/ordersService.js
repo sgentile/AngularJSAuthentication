@@ -6,10 +6,12 @@ app.factory('ordersService', ['$http', 'ngAuthSettings', function ($http, ngAuth
     var ordersServiceFactory = {};
 
     var _getOrders = function () {
-
-        return $http.get(serviceBase + 'api/orders').then(function (results) {
+        return $http.get('http://localhost:38385/api/orders').then(function (results) {
             return results;
         });
+        //return $http.get(serviceBase + 'api/orders').then(function (results) {
+        //    return results;
+        //});
     };
 
     ordersServiceFactory.getOrders = _getOrders;

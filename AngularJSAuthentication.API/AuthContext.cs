@@ -12,8 +12,7 @@ namespace AngularJSAuthentication.API
     {
         public AuthContext()
             : base("AuthContext")
-        {
-     
+        { 
         }
 
         public DbSet<Client> Clients { get; set; }
